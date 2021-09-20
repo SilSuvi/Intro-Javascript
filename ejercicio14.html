@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let metros = parseInt(window.prompt("Distancia en metros"));
+      let horas = parseInt(
+        window.prompt("Horas para realizar dicha distancia")
+      );
+      let minutos = parseInt(window.prompt("Minutos"));
+      let segundos = parseInt(window.prompt("Segundos"));
+
+      let horasSegundos = horas * 3600;
+      let minutosSegundos = minutos * 60;
+      let result = metros / (horasSegundos + minutosSegundos + segundos);
+
+      console.log("Vas a " + result + " metros por segundo");
+      console.log("Y a " + (result / 1000) * 3600 + " kilómetros por hora");
+    </script>
+  </body>
+</html>
